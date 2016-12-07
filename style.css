@@ -10,6 +10,10 @@ body {
   height: 100%;*/
   overflow: hidden;
 }
+h1 {
+  font-family: 'Great Vibes', cursive;
+
+}
 .st-container {
   position:absolute;
   width:100%;
@@ -232,32 +236,14 @@ body {
 		transform: rotate(-45deg) translateY(15%);
 	}
 }
-.imageContainer {
-  background-color: #000000;
-  /*position:absolute;*/
-  /*left:0;
-  top:0;*/
-  width:100%;
-  height:90%;
-}
-.imageContainer img {
-  /*position:fixed;*/
-  /*left:0;
+
+.st-panel h1 {
   top:0;
-  right:0;*/
-  width:100%;
-  height:auto;
-  opacity:0.5;
-}
-.imageContainer h1 {
-  z-index: 2;
-  /*position: absolute;*/
-  /*top: 32%;
-  left: 0;
-  right: 0;*/
-  width: 100%;
+  background-image: url('door.jpg');
+  background-size: cover;
+  margin:0;
+  padding:30%;
   text-align: center;
   color:white;
-  font-family: 'Great Vibes', cursive;
   font-size: 100px;
 }
