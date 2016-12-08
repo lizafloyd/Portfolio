@@ -24,120 +24,120 @@ h1 {
 }
 .st-container > input,
 .st-container > a {
-	position: fixed;
-	bottom: 0px;
-	width: 25%;
-	cursor: pointer;
-	font-size: 16px;
-	height: 6%;
+  position: fixed;
+  bottom: 0px;
+  width: 25%;
+  cursor: pointer;
+  font-size: 16px;
+  height: 6%;
   padding-top: 1%;
   font-family: 'Poiret One', cursive;
   text-decoration: none;
 }
 
 .st-container > input {
-	opacity: 0;
-	z-index: 1000;
+  opacity: 0;
+  z-index: 1000;
 }
 
 .st-container > a {
-	z-index: 10;
-	font-weight: 700;
-	background: #717171;
-	color: white;
-	text-align: center;
-	text-shadow: 1px 1px 1px rgba(151,24,64,0.2);
+  z-index: 10;
+  font-weight: 700;
+  background: #717171;
+  color: white;
+  text-align: center;
+  text-shadow: 1px 1px 1px rgba(151,24,64,0.2);
 }
 .st-container:before {
-	content: '';
-	position: fixed;
-	width: 100%;
-	height: 16px;
-	background: #e23a6e;
-	z-index: 9;
-	bottom: 0;
+  content: '';
+  position: fixed;
+  width: 100%;
+  height: 16px;
+  background: #e23a6e;
+  z-index: 9;
+  bottom: 0;
 }
 #st-control-1, #st-control-1 + a {
-	left: 0;
+  left: 0;
 }
 
 #st-control-2, #st-control-2 + a {
-	left: 25%;
+  left: 25%;
 }
 
 #st-control-3, #st-control-3 + a {
-	left: 50%;
+  left: 50%;
 }
 
 #st-control-4, #st-control-4 + a {
-	left: 75%;
+  left: 75%;
 }
 
 .st-container > input:checked + a,
 .st-container > input:checked:hover + a{
-	background: #4E4E4E;
+  background: #4E4E4E;
 }
 
 .st-container > input:hover + a{
-	background: #4E4E4E;
+  background: #4E4E4E;
 }
 
 /*.st-container > input:hover + a:after {
-	border-bottom-color: #AD244F;
+border-bottom-color: #AD244F;
 }*/
 
 .st-scroll,
 .st-panel {
-	position: relative;
-	width: 100%;
-	height: 100%;
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 .st-scroll {
-	top: 0;
-	left: 0;
-	transition: all 0.6s ease-in-out;
+  top: 0;
+  left: 0;
+  transition: all 0.6s ease-in-out;
 
-	/* Let's enforce some hardware acceleration */
-	-webkit-transform: translate3d(0, 0, 0);
-	-webkit-backface-visibility: hidden;
+  /* Let's enforce some hardware acceleration */
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
 }
 
 .st-panel{
-	background: #fff;
-	overflow: hidden;
+  background: #fff;
+  overflow: hidden;
 }
 
 #st-control-1:checked ~ .st-scroll {
-	transform: translateY(0%);
+  transform: translateY(0%);
 }
 #st-control-2:checked ~ .st-scroll {
-	transform: translateY(-100%);
+  transform: translateY(-100%);
 }
 #st-control-3:checked ~ .st-scroll {
-	transform: translateY(-200%);
+  transform: translateY(-200%);
 }
 #st-control-4:checked ~ .st-scroll {
-	transform: translateY(-300%);
+  transform: translateY(-300%);
 }
 #st-control-5:checked ~ .st-scroll {
-	transform: translateY(-400%);
+  transform: translateY(-400%);
 }
 
 .st-panel h2 {
-	color: #e23a6e;
-	text-shadow: 1px 1px 1px rgba(151,24,64,0.2);
-	position: absolute;
-	font-size: 54px;
-	font-weight: 900;
-	width: 80%;
-	left: 10%;
-	text-align: center;
-	line-height: 50px;
-	margin: -70px 0 0 0;
-	padding: 0;
-	top: 50%;
-	-webkit-backface-visibility: hidden;
+  color: #EB0202;
+  text-shadow: 1px 1px 1px rgba(151,24,64,0.2);
+  position: absolute;
+  font-size: 54px;
+  font-weight: 900;
+  width: 80%;
+  left: 10%;
+  text-align: center;
+  line-height: 50px;
+  margin: -70px 0 0 0;
+  padding: 0;
+  top: 30%;
+  -webkit-backface-visibility: hidden;
 }
 
 #st-control-1:checked ~ .st-scroll #st-panel-1 h2,
@@ -145,84 +145,84 @@ h1 {
 #st-control-3:checked ~ .st-scroll #st-panel-3 h2,
 #st-control-4:checked ~ .st-scroll #st-panel-4 h2,
 #st-control-5:checked ~ .st-scroll #st-panel-5 h2{
-	animation: moveDown 0.6s ease-in-out 0.2s backwards;
+  animation: moveDown 0.6s ease-in-out 0.2s backwards;
 }
 @keyframes moveDown{
-	0% {
-		transform: translateY(-40px);
-		opacity: 0;
-	}
-	100% {
-		transform: translateY(0px);
-		opacity: 1;
-	}
+  0% {
+    transform: translateY(-40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }
 
-.st-panel p {
-	position: absolute;
-	text-align: center;
-	font-size: 16px;
-	line-height: 22px;
-	color: #8b8b8b;
-	z-index: 2;
-	padding: 0;
-	width: 50%;
-	left: 25%;
-	top: 50%;
-	margin: 10px 0 0 0;
-	-webkit-backface-visibility: hidden;
-}
+/*.st-panel p {
+  position: absolute;
+  text-align: center;
+  font-size: 16px;
+  line-height: 22px;
+  color: #8b8b8b;
+  z-index: 2;
+  padding: 0;
+  width: 50%;
+  left: 25%;
+  top: 40%;
+  margin: 10px 0 0 0;
+  -webkit-backface-visibility: hidden;
+}*/
 
 #st-control-1:checked ~ .st-scroll #st-panel-1 p,
 #st-control-2:checked ~ .st-scroll #st-panel-2 p,
 #st-control-3:checked ~ .st-scroll #st-panel-3 p,
 #st-control-4:checked ~ .st-scroll #st-panel-4 p,
 #st-control-5:checked ~ .st-scroll #st-panel-5 p{
-	animation: moveUp 0.6s ease-in-out 0.2s backwards;
+  animation: moveUp 0.6s ease-in-out 0.2s backwards;
 }
 
 @keyframes moveUp{
-	0% {
-		transform: translateY(40px);
-		opacity: 0;
-	}
-	100% {
-		transform: translateY(0px);
-		opacity: 1;
-	}
+  0% {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }
 
 @media screen and (max-width: 520px) {
-	.st-panel h2 {
-		font-size: 42px;
-	}
+  .st-panel h2 {
+    font-size: 42px;
+  }
 
-	.st-panel p {
-		width: 90%;
-		left: 5%;
-		margin-top: 0;
-	}
+  .st-panel p {
+    width: 90%;
+    left: 5%;
+    margin-top: 0;
+  }
 
-	.st-container > a {
-		font-size: 13px;
-	}
+  .st-container > a {
+    font-size: 13px;
+  }
 }
 
 @media screen and (max-width: 360px) {
-	.st-container > a {
-		font-size: 10px;
-	}
+  .st-container > a {
+    font-size: 10px;
+  }
 
-	.st-deco{
-		width: 120px;
-		height: 120px;
-		margin-left: -60px;
-	}
+  .st-deco{
+    width: 120px;
+    height: 120px;
+    margin-left: -60px;
+  }
 
-	[data-icon]:after {
-		font-size: 60px;
-		transform: rotate(-45deg) translateY(15%);
-	}
+  [data-icon]:after {
+    font-size: 60px;
+    transform: rotate(-45deg) translateY(15%);
+  }
 }
 
 .st-panel h1 {
@@ -234,4 +234,68 @@ h1 {
   text-align: center;
   color:white;
   font-size: 100px;
+}
+.lizapic {
+  width:230px;
+  height:230px;
+  border-radius: 50%;
+  align:left;
+}
+.st-panel #about, #rightSideAbout, #socialButtons, .aboutContainer {
+  position:relative;
+  width: 80%;
+  margin:auto;
+  top: 35%;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#about {
+  margin: auto;
+  font-family: 'Poiret One', cursive;
+  font-size:18px;
+  text-align: center;
+  width:100%;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+}
+#rightSideAbout {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+#socialButtons {
+  justify-content: center;
+}
+#socialButtons a {
+  margin: 10px;
+}
+#owl-demo {
+  height:50%;
+  top:30%;
+}
+.owl-wrapper-outer {
+  height:80%;
+}
+#owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: 20%;
+
+}
+.tabs-title {
+  display: inline-block;
+  float: none;
+}
+
+#resume {
+  position:relative;
+  width: 80%;
+  margin:auto;
+  top: 30%;
+  display:flex;
+  flex-direction: column;
+  text-align: center;
 }
