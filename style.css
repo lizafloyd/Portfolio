@@ -235,6 +235,16 @@ border-bottom-color: #AD244F;
   color:white;
   font-size: 100px;
 }
+#jobDesc {
+  top:80%;
+  z-index: 2;
+  position:absolute;
+  text-align: center;
+  color: white;
+  width:100%;
+  font-family: 'Poiret One', cursive;
+
+}
 .lizapic {
   width:230px;
   height:230px;
@@ -279,11 +289,14 @@ border-bottom-color: #AD244F;
 .owl-wrapper-outer {
   height:80%;
 }
-#owl-demo .item img{
+#owl-demo .item img {
+  background-color: black;
     display: block;
     width: 100%;
     height: 20%;
-
+}
+#owl-demo .item:hover {
+  opacity:0.5;
 }
 .tabs-title {
   display: inline-block;
