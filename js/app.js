@@ -7,11 +7,11 @@ angular
   Router
 ])
 .controller('home', [
+  '$state',
   home
 ])
 
 function Router ($stateProvider) {
-  console.log('hitting router');
   $stateProvider
   .state('home', {
     url: '/',
@@ -37,7 +37,14 @@ function Router ($stateProvider) {
   })
 }
 
-function home (){
-  console.log("home controller");
+function home ($state){
 
+  $(document).ready(function() {
+    $("#owl-demo").owlCarousel({
+      navigation : true, // Show next and prev buttons
+      slideSpeed : 300,
+      paginationSpeed : 400,
+      singleItem:true
+    });
+  });
 }

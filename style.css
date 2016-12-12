@@ -227,14 +227,24 @@ border-bottom-color: #AD244F;
 
 .st-panel h1 {
   top:0;
-  background-image: url('door.jpg');
-  background-size: cover;
   margin:0;
   padding:30%;
   text-align: center;
   color:white;
   font-size: 100px;
 }
+
+@media only screen and (max-width: 500px){
+  h1 {
+    color: black !important;
+  }
+}
+
+#st-panel-1 {
+  background-image: url('door.jpg');
+  background-size: cover;
+}
+
 #jobDesc {
   top:80%;
   z-index: 2;
@@ -290,7 +300,6 @@ border-bottom-color: #AD244F;
   height:80%;
 }
 #owl-demo .item img {
-  background-color: black;
     display: block;
     width: 100%;
     height: 20%;
@@ -311,4 +320,45 @@ border-bottom-color: #AD244F;
   display:flex;
   flex-direction: column;
   text-align: center;
+}
+
+.show h1 {
+  text-align: center;
+  padding:10%;
+  margin:0;
+  background-size: 300%;
+  color:white;
+  font-size: 6em;
+}
+#wanderfullyShow h1 {
+  background-image: url('wanderfully.jpg');
+}
+#simonShow h1 {
+  background-image: url('simon.jpg');
+  background-position: center;
+  color:black;
+}
+#sevenShow h1 {
+  background-image: url('sevenforks.jpg');
+  color:black;
+}
+#connectShow h1 {
+  background-image: url('connect.jpg');
+  background-position: center;
+  color:black;
+}
+table {
+  width:60%;
+  margin:auto;
+  margin-top:3%;
+  font-family: 'Poiret One', cursive;
+  font-size: 1.2em;
+  margin-bottom: 10%;
+}
+tr, th, td {
+  padding:2%;
+}
+
+#hand {
+  color:black;
 }
