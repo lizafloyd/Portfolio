@@ -4,6 +4,7 @@ angular
 ])
 .config([
   '$stateProvider',
+  '$locationProvider',
   Router
 ])
 .controller('home', [
@@ -11,7 +12,8 @@ angular
   home
 ])
 
-function Router ($stateProvider) {
+function Router ($stateProvider, $locationProvider) {
+  $locationProvider.html5Mode(true)
   $stateProvider
   .state('home', {
     url: '/',
